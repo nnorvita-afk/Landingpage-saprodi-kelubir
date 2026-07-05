@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saprodi BUMDes — MitraSejahtera Kelubir</title>
+    <meta
+      name="description"
+      content="Marketplace sarana produksi pertanian (saprodi) berkualitas untuk petani Tanjung Palas Utara — pupuk, herbisida, insektisida dengan harga terbaik."
+    />
+
+    <!-- Google Fonts: Display (Fraunces) + Body (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (ikon) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS kustom -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER / NAVIGASI ===== -->
+    <header class="topbar" id="topbar">
+      <div class="topbar-inner">
+        <a href="#home" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+          <span class="brand-text"
+            >Saprodi BUMDes<small>MitraSejahtera Kelubir</small></span
+          >
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active" data-nav="home">Home</a>
+          <a href="#produk" class="nav-link" data-nav="produk">Produk</a>
+          <a href="#about" class="nav-link" data-nav="about">About</a>
+          <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+        </nav>
+
+        <a
+          href="https://wa.me/6282358374235"
+          target="_blank"
+          rel="noopener"
+          class="btn-wa-top"
+        >
+          <i class="fa-brands fa-whatsapp"></i> Pesan
+        </a>
+
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Buka menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== HOME ===== -->
+      <section id="home" class="section hero-section">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-leaf"></i> Hasil Panen Lebih Optimal</span
+            >
+            <h1>
+              Sarana Produksi Pertanian, Lengkap & Terpercaya</em>
+            </h1>
+            <p>
+              BUMDes Mitra Sejahtera Kelubir menyediakan pupuk, herbisida, dan
+              insektisida berkualitas premium dengan harga bersaing — mendukung
+              petani sawit, kakao, jagung, dan padi di wilayah Tanjung Palas
+              Utara.
+            </p>
+            <div class="hero-cta">
+              <a href="#produk" class="btn btn-primary"
+                >Lihat Produk <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a href="#about" class="btn btn-ghost">Tentang Kami</a>
+            </div>
+            <dl class="hero-stats">
+              <div>
+                <dt id="statProduk">0</dt>
+                <dd>Produk Tersedia</dd>
+              </div>
+              <div>
+                <dt>100%</dt>
+                <dd>Original</dd>
+              </div>
+              <div>
+                <dt>6</dt>
+                <dd>Hari Operasional</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-visual">
+            <img
+              src="img/petani.jpeg"
+              alt="Petani sedang merawat tanaman"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PRODUK ===== -->
+      <section id="produk" class="section produk-section">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-basket-shopping"></i> Katalog</span
+            >
+            <h2>Produk Kami</h2>
+            <p>
+              Klik kartu produk untuk melihat detail lengkap dan langsung pesan
+              via WhatsApp.
+            </p>
+          </div>
+
+          <div class="produk-toolbar">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari produk… (mis. Roundup, Regent)"
+              />
+            </div>
+            <div class="filter-box" id="filterBox">
+              <button class="filter-chip active" data-filter="semua">
+                Semua
+              </button>
+              <button class="filter-chip" data-filter="herbisida">
+                Herbisida
+              </button>
+              <button class="filter-chip" data-filter="insektisida">
+                Insektisida
+              </button>
+              <button class="filter-chip" data-filter="pupuk">Pupuk</button>
+            </div>
+          </div>
+
+          <div class="produk-grid" id="produkGrid" aria-live="polite"></div>
+          <p class="empty-state" id="emptyState" hidden>
+            Produk tidak ditemukan. Coba kata kunci lain.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section about-section">
+        <div class="wrap about-grid">
+          <div class="about-copy">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-circle-info"></i> Tentang Kami</span
+            >
+            <h2>Apa Itu <em>SAPRODI</em>?</h2>
+            <p>
+              Sarana Produksi (SAPRODI) adalah segala jenis input atau kebutuhan
+              yang digunakan untuk mendukung kegiatan budidaya pertanian, agar
+              proses produksi berjalan baik dan hasil panen menjadi optimal —
+              mulai dari petani sawit, kakao, jagung, hingga padi. Saprodi
+              merupakan komponen penting karena berpengaruh langsung terhadap
+              produktivitas, efisiensi, dan kualitas hasil pertanian.
+            </p>
+            <p>
+              Kami berkomitmen memberikan produk terbaik dengan harga terjangkau
+              dan pelayanan profesional untuk membantu meningkatkan hasil
+              pertanian, terkhusus bagi petani di wilayah Tanjung Palas Utara.
+            </p>
+
+            <ul class="about-points">
+              <li>
+                <i class="fa-solid fa-check"></i> Produk asli &amp;
+                bersertifikat
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Harga terjangkau untuk petani
+                lokal
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Konsultasi penggunaan sesuai
+                dosis anjuran
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-payment">
+            <h5><i class="fa-solid fa-credit-card"></i> Sistem Pembayaran</h5>
+            <div class="payment-card">
+              <span class="payment-bank">Bank Jago</span>
+              <span class="payment-no">105446079489</span>
+              <span class="payment-name">a.n. Norvita Juman</span>
+            </div>
+            <p class="payment-note">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Konfirmasi pembayaran melalui WhatsApp setelah transfer agar
+              pesanan segera diproses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="section contact-section">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-headset"></i> Kontak</span
+            >
+            <h2>Hubungi Kami</h2>
+            <p>
+              Kami siap membantu kebutuhan saprodi Anda melalui kanal berikut.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a
+              class="contact-card"
+              href="https://wa.me/6282358374235"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="icon-box whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <h4>WhatsApp</h4>
+              <p>Pemesanan dan informasi produk secara langsung.</p>
+              <span class="contact-value">+62 823-5837-4235</span>
+              <span class="contact-action"
+                >Chat Sekarang <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </a>
+
+            <a class="contact-card" href="mailto:saprodi@gmail.com">
+              <div class="icon-box email">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <h4>Email</h4>
+              <p>Pertanyaan dan kerja sama bisnis resmi.</p>
+              <span class="contact-value">saprodi@gmail.com</span>
+              <span class="contact-action"
+                >Kirim Email <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://www.google.com/maps/search/?api=1&query=Desa+Kelubir+Tanjung+Palas+Utara+Bulungan+Kalimantan+Utara"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="icon-box lokasi">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h4>Lokasi</h4>
+              <p>Kunjungi toko offline kami.</p>
+              <span class="contact-value"
+                >Desa Kelubir, Tanjung Palas Utara</span
+              >
+              <span class="contact-action"
+                >Buka Maps <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </a>
+          </div>
+
+          <div class="hours-card">
+            <div class="icon-box jam"><i class="fa-regular fa-clock"></i></div>
+            <h4>Jam Operasional</h4>
+            <div class="hours-grid">
+              <div>
+                <span class="day">Senin – Jumat</span
+                ><span class="time">08:00 – 17:00</span>
+              </div>
+              <div>
+                <span class="day">Sabtu</span
+                ><span class="time">08:00 – 15:00</span>
+              </div>
+              <div>
+                <span class="day">Minggu</span><span class="time">Libur</span>
+              </div>
+            </div>
+            <hr />
+            <h5>Ikuti Kami</h5>
+            <a
+              href="https://www.facebook.com/share/18t3dkMna4/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener"
+              class="btn-social"
+            >
+              <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span
+          >© <span id="year"></span> Saprodi — BUMDes Mitra Sejahtera
+          Kelubir.</span
+        >
+        <span>Desa Kelubir, Tanjung Palas Utara</span>
+      </div>
+    </footer>
+
+    <!-- ===== MODAL DETAIL PRODUK (TUNGGAL, dipakai ulang untuk semua produk) ===== -->
+    <div class="modal-overlay" id="produkModal" aria-hidden="true">
+      <div
+        class="modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalNama"
+      >
+        <button class="modal-close" id="modalClose" aria-label="Tutup">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-grid">
+          <div class="modal-img-wrap">
+            <img id="modalGambar" src="" alt="" />
+            <span class="modal-stock-badge" id="modalStokBadge"></span>
+          </div>
+
+          <div class="modal-info">
+            <span class="modal-kategori" id="modalKategori"></span>
+            <h3 id="modalNama"></h3>
+            <div class="modal-harga" id="modalHarga"></div>
+
+            <div class="modal-meta">
+              <span
+                ><i class="fa-solid fa-box"></i> Stok: <b id="modalStok"></b
+              ></span>
+            </div>
+
+            <h6>Deskripsi Produk</h6>
+            <p id="modalDeskripsi"></p>
+
+            <a
+              href="#"
+              id="modalPesanBtn"
+              class="btn btn-primary btn-block"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
