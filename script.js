@@ -15,7 +15,7 @@ const PRODUK = [
     harga: 77000,
     stok: 4,
     satuan: "Botol",
-    gambar: "img/1.png",
+    gambar: "1.png",
     deskripsi:
       "Insektisida sistemik yang efektif mengendalikan hama penghisap pada tanaman padi, cabai, tomat, dan berbagai tanaman hortikultura.",
   },
@@ -27,7 +27,7 @@ const PRODUK = [
     harga: 165000,
     stok: 4,
     satuan: "Botol",
-    gambar: "img/2.png",
+    gambar: "2.png",
     deskripsi:
       "Insektisida sistemik yang efektif mengendalikan hama penghisap pada tanaman padi, cabai, tomat, dan berbagai tanaman hortikultura.",
   },
