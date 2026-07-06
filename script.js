@@ -39,7 +39,7 @@ const PRODUK = [
     harga: 65000,
     stok: 3,
     satuan: "Botol",
-    gambar: "img/3.png",
+    gambar: "3.png",
     deskripsi:
       "herbisida racun daun yang efektif mengendalikan berbagai jenis gulma pada lahan pertanian dan perkebunan. Bekerja melalui daun gulma yang terkena semprotan, sehingga gulma cepat menguning, mengering, dan mati. Cocok digunakan pada tanaman seperti kelapa sawit, karet, dan tanaman tahunan lainnya. Gunakan sesuai dosis anjuran untuk hasil pengendalian gulma yang optimal.",
   },
@@ -51,7 +51,7 @@ const PRODUK = [
     harga: 58000,
     stok: 4,
     satuan: "Botol",
-    gambar: "img/4.png",
+    gambar: "4.png",
     deskripsi:
       "insektisida yang efektif mengendalikan berbagai hama pada tanaman pertanian. Bekerja melalui kontak dan lambung serangga, sehingga mampu membasmi hama secara cepat dan membantu melindungi tanaman dari kerusakan. Cocok digunakan pada berbagai komoditas pertanian sesuai petunjuk penggunaan. Gunakan sesuai dosis anjuran agar pengendalian hama optimal dan hasil panen tetap terjaga. Cocok untuk padi, jagung, cabai, tomat, bawang merah, dan kentang.",
   },
@@ -63,7 +63,7 @@ const PRODUK = [
     harga: 125000,
     stok: 1,
     satuan: "Botol",
-    gambar: "img/5.png",
+    gambar: "5.png",
     deskripsi:
       "Iinsektisida yang efektif mengendalikan berbagai hama pada tanaman pertanian. Bekerja melalui kontak dan lambung serangga, sehingga mampu membasmi hama secara cepat dan membantu melindungi tanaman dari kerusakan. Cocok digunakan pada berbagai komoditas pertanian sesuai petunjuk penggunaan. Gunakan sesuai dosis anjuran agar pengendalian hama optimal dan hasil panen tetap terjaga. Cocok untuk padi, jagung, cabai, tomat, bawang merah, dan kentang.",
   },
@@ -75,7 +75,7 @@ const PRODUK = [
     harga: 28000,
     stok: 3,
     satuan: "Botol",
-    gambar: "img/6.png",
+    gambar: "6.png",
     deskripsi:
       "Pupuk daun yang membantu pertumbuhan tanaman, menjaga daun tetap hijau, memperkuat batang, serta mendukung pembentukan bunga dan buah.",
   },
