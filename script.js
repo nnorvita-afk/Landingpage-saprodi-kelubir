@@ -87,7 +87,7 @@ const PRODUK = [
     harga: 75000,
     stok: 12,
     satuan: "Botol",
-    gambar: "img/7.png",
+    gambar: "7.png",
     deskripsi:
       "herbisida racun daun yang bekerja cepat untuk mengendalikan berbagai jenis gulma pada lahan pertanian dan perkebunan. Herbisida ini bekerja melalui daun gulma yang terkena semprotan, sehingga gulma cepat layu, mengering, dan mati. Cocok digunakan pada tanaman seperti kelapa sawit, karet, dan tanaman tahunan lainnya. Gunakan sesuai dosis dan petunjuk pada label untuk hasil pengendalian gulma yang efektif dan aman.",
   },
@@ -99,7 +99,7 @@ const PRODUK = [
     harga: 360000,
     stok: 0,
     satuan: "Jerigen",
-    gambar: "img/8.png",
+    gambar: "8.png",
     deskripsi:
       "herbisida racun daun yang bekerja cepat untuk mengendalikan berbagai jenis gulma pada lahan pertanian dan perkebunan. Herbisida ini bekerja melalui daun gulma yang terkena semprotan, sehingga gulma cepat layu, mengering, dan mati. Cocok digunakan pada tanaman seperti kelapa sawit, karet, dan tanaman tahunan lainnya. Gunakan sesuai dosis dan petunjuk pada label untuk hasil pengendalian gulma yang efektif dan aman.",
   },
@@ -111,7 +111,7 @@ const PRODUK = [
     harga: 85000,
     stok: 5,
     satuan: "Botol",
-    gambar: "img/9.png",
+    gambar: "9.png",
     deskripsi:
       "Herbisida sistemik yang bekerja hingga ke akar gulma. Cocok untuk kelapa sawit, karet, kakao, kopi, jagung, dan tebu.",
   },
@@ -123,7 +123,7 @@ const PRODUK = [
     harga: 40000,
     stok: 20,
     satuan: "Botol",
-    gambar: "img/10 (1).png",
+    gambar: "10 (1).png",
     deskripsi:
       " herbisida yang efektif mengendalikan berbagai jenis gulma pada lahan pertanian dan perkebunan. Bekerja melalui daun gulma yang terkena semprotan sehingga gulma cepat menguning, mengering, dan mati. Cocok digunakan pada tanaman seperti kelapa sawit, karet, dan tanaman tahunan lainnya.",
   },
@@ -135,7 +135,7 @@ const PRODUK = [
     harga: 180000,
     stok: 0,
     satuan: "Jerigen",
-    gambar: "img/11.png",
+    gambar: "11.png",
     deskripsi:
       "herbisida yang efektif mengendalikan berbagai jenis gulma pada lahan pertanian dan perkebunan. Bekerja melalui daun gulma yang terkena semprotan sehingga gulma cepat menguning, mengering, dan mati. Cocok digunakan pada tanaman seperti kelapa sawit, karet, dan tanaman tahunan lainnya.",
   },
@@ -147,7 +147,7 @@ const PRODUK = [
     harga: 95000,
     stok: 0,
     satuan: "Botol",
-    gambar: "img/12.png",
+    gambar: "12.png",
     deskripsi:
       "herbisida sistemik yang efektif mengendalikan berbagai jenis gulma berdaun lebar, berdaun sempit, dan teki. Herbisida ini diserap melalui daun lalu menyebar hingga ke akar, sehingga gulma mengering dan mati secara menyeluruh. Cocok digunakan pada lahan pertanian dan perkebunan, seperti kelapa sawit, karet, dan tanaman tahunan lainnya.",
   },
@@ -159,7 +159,7 @@ const PRODUK = [
     harga: 170000,
     stok: 7,
     satuan: "Botol",
-    gambar: "img/13.png",
+    gambar: "13.png",
     deskripsi:
       "insektisida yang efektif mengendalikan berbagai jenis hama pada tanaman pertanian dan perkebunan. Bekerja melalui kontak dan lambung serangga sehingga membantu melindungi tanaman dari kerusakan akibat serangan hama. Insektisida yang efektif mengendalikan berbagai hama pada tanaman padi, cabai, tomat, bawang merah, dan jagung.",
   },
@@ -171,7 +171,7 @@ const PRODUK = [
     harga: 75000,
     stok: 19,
     satuan: "Botol",
-    gambar: "img/14.png",
+    gambar: "14.png",
     deskripsi:
       "herbisida yang efektif mengendalikan berbagai jenis gulma pada lahan pertanian dan perkebunan. Bekerja melalui daun gulma yang terkena semprotan sehingga gulma cepat layu, mengering, dan mati. Cocok digunakan pada tanaman seperti kelapa sawit, jagung, padi, dan tanaman tahunan lainnya.",
   },
@@ -183,7 +183,7 @@ const PRODUK = [
     harga: 85000,
     stok: 18,
     satuan: "Botol",
-    gambar: "img/15.png",
+    gambar: "15.png",
     deskripsi:
       "herbisida yang efektif mengendalikan berbagai jenis gulma pada lahan pertanian dan perkebunan. Bekerja melalui daun gulma yang terkena semprotan sehingga gulma cepat layu, mengering, dan mati. Cocok digunakan pada berbagai tanaman pertanian dan perkebunan.",
   },
